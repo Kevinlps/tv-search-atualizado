@@ -39,13 +39,19 @@ const renderSearchForm = (container: HTMLElement) => {
   const htmlContent = `
     <form id="search-form">
         <input type="text" id="filter" name="filter" placeholder="Digite o título da série">
-        <button>Pesquisar</button>
+        <button id="search">Pesquisar</button>
     </form>
-    <button id="loading"></button>
     <div class="loader"></div>
     `
 
   container.innerHTML = htmlContent
+  const button = <HTMLButtonElement>$('#search')
+    const loader = <HTMLDivElement>$('.loader')
+    
+    button.addEventListener('click', () => {
+        loader.style.display = "block"
+    })
+      
 }
 
 export default renderSearchForm

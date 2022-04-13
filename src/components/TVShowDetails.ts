@@ -6,7 +6,7 @@ const imageNotFound = '/img/image_not_found.png'
 const renderTVShowDetails = (show: TVShow, container: HTMLElement) => {
   const htmlContent = `
     <div id="show-container">
-      <div id="image-container">
+     <div id="image-container">
         <img src="${show.imageUrl || imageNotFound}" alt="${show.name}">
       </div>
 
@@ -33,6 +33,9 @@ const renderTVShowDetails = (show: TVShow, container: HTMLElement) => {
   `
 
   container.innerHTML = htmlContent
+
+
 }
+
 
 export default renderTVShowDetails

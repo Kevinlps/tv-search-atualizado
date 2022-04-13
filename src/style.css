@@ -34,7 +34,7 @@ body {
 
 
   animation: spinner 4s linear infinite;
-
+  display: none;
 
 }
 
@@ -180,7 +180,29 @@ a {
   .show-banner img {
     width: 100%;
   }
+  
   #show-container{
-   
+    width: 80%;
+    display: block;
+  }
+  #image-container {
+    width: 100%;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    
+  }
+  #image-container img {
+    position: top;
+    width: 95%;
+  }
+
+  #datails-container{
+    display: flex;
+    flex-direction: column;
+  }
+  #backbtn {
+   position: relative;
   }
 }
